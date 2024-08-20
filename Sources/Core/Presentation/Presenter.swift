@@ -15,7 +15,6 @@ public protocol Presenter {
   associatedtype AddFavoriteRequest
   associatedtype Detail
 
-  func getRouter() -> any Router
   func getList(request: Request?)
   func getDetail(request: DetailRequest?) -> Detail
   func deleteFavorite(request: DeleteFavoriteRequest?)
